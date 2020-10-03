@@ -1,0 +1,27 @@
+.Ticket {
+  max-width: 500px;
+  height: 185px;
+  padding: 20px 50px 20px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Price {
+  color: #2196f3;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.Segment {
+  display: flex;
+  justify-content: space-between;
+}
