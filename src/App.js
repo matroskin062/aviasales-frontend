@@ -4,6 +4,7 @@ import axios from 'axios';
 import { setTickets } from './store/actions/actions';
 import { useDispatch } from 'react-redux';
 import TicketsList from './components/TicketsList/TicketsList';
+import Filter from './components/Filter/Filter';
 
 function App() {
   const dispatch = useDispatch();
@@ -42,7 +43,12 @@ function App() {
 
   return (
     <div className={s.Container}>
-      <TicketsList />
+      <div>
+        <Filter />
+      </div>
+      <div>
+        <TicketsList />
+      </div>
     </div>
   );
 }
