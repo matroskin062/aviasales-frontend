@@ -16,12 +16,13 @@ const Filter = () => {
         <p>Количество пересадок</p>
       </div>
       {chekboxes.map((cb) => (
-        <div className={s.Checkbox}>
-          <label>
+        <label key={cb.text}>
+          <div className={s.Checkbox}>
             <input type='checkbox' />
+            <span></span>
             {cb.text}
-          </label>
-        </div>
+          </div>
+        </label>
       ))}
     </div>
   );

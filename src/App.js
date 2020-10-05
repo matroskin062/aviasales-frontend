@@ -5,9 +5,11 @@ import { setTickets } from './store/actions/actions';
 import { useDispatch } from 'react-redux';
 import TicketsList from './components/TicketsList/TicketsList';
 import Filter from './components/Filter/Filter';
+import Tabs from './components/Tabs/Tabs';
 
 function App() {
   const dispatch = useDispatch();
+  const [sortType, setSortType] = React.useState('');
 
   const getId = async () => {
     const { data } = await axios.get(
@@ -47,7 +49,9 @@ function App() {
         <Filter />
       </div>
       <div>
-        <TicketsList />
+        <Tabs setSortType={setSortType} />
+
+        <TicketsList sortType={sortType} />
       </div>
     </div>
   );

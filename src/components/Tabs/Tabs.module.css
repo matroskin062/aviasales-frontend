@@ -1,0 +1,27 @@
+.Tabs {
+  display: flex;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.Tabs button {
+  display: block;
+  width: 100%;
+  padding: 15px 57px;
+  background: #ffffff;
+  border: 1px solid #dfe5ec;
+}
+
+.Tabs .Left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.Tabs .Right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.Tabs .Active {
+  background-color: #2196f3;
+  color: white;
+}
